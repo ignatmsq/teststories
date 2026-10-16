@@ -1,0 +1,44 @@
+[
+  {
+    "id": "story_four_noble_truths",
+    "version": 1,
+    "group_id": "group_four_noble_truths",
+    "group_name": "Four Noble Truths",
+    "start_at": 1700000000,
+    "end_at": 2000000000,
+    "sort_order": 0,
+    "duration_seconds": 8,
+    "media": {
+      "url": "https://raw.githubusercontent.com/ignatmsq/teststories/main/zips/four-noble-truths.zip",
+      "entry": "index.html"
+    }
+  },
+  {
+    "id": "story_tibetan_mandalas",
+    "version": 1,
+    "group_id": "group_mandalas",
+    "group_name": "Mandalas",
+    "start_at": 1700000000,
+    "end_at": 2000000000,
+    "sort_order": 0,
+    "duration_seconds": 8,
+    "media": {
+      "url": "https://raw.githubusercontent.com/ignatmsq/teststories/main/zips/tibetan-mandalas.zip",
+      "entry": "index.html"
+    }
+  },
+  {
+    "id": "story_tibetan_monasteries",
+    "version": 1,
+    "group_id": "group_monasteries",
+    "group_name": "Monasteries",
+    "start_at": 1700000000,
+    "end_at": 2000000000,
+    "sort_order": 0,
+    "duration_seconds": 8,
+    "media": {
+      "url": "https://raw.githubusercontent.com/ignatmsq/teststories/main/zips/tibetan-monasteries.zip",
+      "entry": "index.html"
+    }
+  }
+]
