@@ -2,7 +2,7 @@
   {
     "id": "story_four_noble_truths",
     "version": 1,
-    "group_id": "tibet",
+    "group_id": "tibet2",
     "group_name": "Tibet",
     "start_at": 1700000000,
     "end_at": 2000000000,
@@ -16,7 +16,7 @@
   {
     "id": "story_tibetan_mandalas",
     "version": 1,
-    "group_id": "tibet",
+    "group_id": "tibet2",
     "group_name": "Tibet",
     "start_at": 1700000000,
     "end_at": 2000000000,
@@ -30,7 +30,7 @@
   {
     "id": "story_tibetan_monasteries",
     "version": 1,
-    "group_id": "tibet",
+    "group_id": "tibet2",
     "group_name": "Tibet",
     "start_at": 1700000000,
     "end_at": 2000000000,
