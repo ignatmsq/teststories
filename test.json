@@ -40,5 +40,61 @@
       "url": "https://raw.githubusercontent.com/ignatmsq/teststories/main/zips/tibetan-monasteries.zip",
       "entry": "index.html"
     }
+  },
+  {
+    "id": "story_kailash_1",
+    "version": 1,
+    "group_id": "group_kailash",
+    "group_name": "Mount Kailash",
+    "start_at": 1700000000,
+    "end_at": 2000000000,
+    "sort_order": 0,
+    "duration_seconds": 8,
+    "media": {
+      "url": "https://raw.githubusercontent.com/ignatmsq/teststories/main/zips/kailash1.zip",
+      "entry": "index.html"
+    }
+  },
+  {
+    "id": "story_kailash_2",
+    "version": 1,
+    "group_id": "group_kailash",
+    "group_name": "Mount Kailash",
+    "start_at": 1700000000,
+    "end_at": 2000000000,
+    "sort_order": 1,
+    "duration_seconds": 8,
+    "media": {
+      "url": "https://raw.githubusercontent.com/ignatmsq/teststories/main/zips/kailash2.zip",
+      "entry": "index.html"
+    }
+  },
+  {
+    "id": "story_kailash_3",
+    "version": 1,
+    "group_id": "group_kailash",
+    "group_name": "Mount Kailash",
+    "start_at": 1700000000,
+    "end_at": 2000000000,
+    "sort_order": 2,
+    "duration_seconds": 8,
+    "media": {
+      "url": "https://raw.githubusercontent.com/ignatmsq/teststories/main/zips/kailash3.zip",
+      "entry": "index.html"
+    }
+  },
+  {
+    "id": "story_kailash_4",
+    "version": 1,
+    "group_id": "group_kailash",
+    "group_name": "Mount Kailash",
+    "start_at": 1700000000,
+    "end_at": 2000000000,
+    "sort_order": 3,
+    "duration_seconds": 8,
+    "media": {
+      "url": "https://raw.githubusercontent.com/ignatmsq/teststories/main/zips/kailash4.zip",
+      "entry": "index.html"
+    }
   }
 ]
