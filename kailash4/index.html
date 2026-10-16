@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Manasarovar — Lake of the Mind</title>
+<style>
+  :root{
+    --teal:#146b6b;
+    --gold:#cfa040;
+    --cream:#eef6f3;
+    --ink:#13241f;
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#07100e;
+    font-family:'Georgia','Times New Roman',serif;
+  }
+  /* The story frame fills 100% of whatever host container/viewport it is
+     placed in — no fixed aspect ratio, no letterboxing. All content is
+     fitted/clipped inside — it never scrolls, regardless of the frame's
+     actual width:height ratio. */
+  .frame{
+    position:relative;
+    width:100%;
+    height:100%;
+    background:var(--cream);
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    container-type:size;
+  }
+
+  .hero{
+    flex:0 0 53%;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.05) 40%, rgba(7,16,14,0.93) 100%);
+  }
+  .hero-caption{
+    position:absolute;
+    bottom:3cqh;
+    left:0;
+    right:0;
+    text-align:center;
+    z-index:2;
+    padding:0 4cqw;
+  }
+  .hero-caption .kicker{
+    display:block;
+    font-size:1.5cqh;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:0.8cqh;
+  }
+  .hero-caption h1{
+    margin:0;
+    font-size:3.9cqh;
+    font-weight:700;
+    color:#f1fbf8;
+    text-shadow:0 2px 10px rgba(0,0,0,0.7);
+    line-height:1.15;
+  }
+
+  .badge{
+    position:absolute;
+    top:46.5cqh;
+    right:5cqw;
+    width:13.5cqh;
+    height:13.5cqh;
+    border-radius:50%;
+    overflow:hidden;
+    border:0.5cqh solid var(--gold);
+    box-shadow:0 0.6cqh 1.6cqh rgba(0,0,0,0.45);
+    z-index:5;
+  }
+  .badge img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+
+  .content{
+    flex:1;
+    min-height:0;
+    overflow:hidden;
+    padding:3cqh 5cqw 2.4cqh;
+    color:var(--ink);
+    background:
+      radial-gradient(circle at 10% 0%, rgba(20,107,107,0.1), transparent 45%),
+      var(--cream);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+
+  .intro{
+    font-size:2.1cqh;
+    line-height:1.4;
+    margin:0;
+    padding-right:14cqw;
+  }
+
+  .stat-row{
+    display:flex;
+    gap:1.6cqw;
+  }
+  .stat{
+    flex:1;
+    text-align:center;
+    background:#fff;
+    border-radius:0.8cqh;
+    padding:1.2cqh 0.4cqw;
+    box-shadow:0 0.2cqh 0.6cqh rgba(0,0,0,0.08);
+    border-top:0.35cqh solid var(--teal);
+  }
+  .stat .num{
+    display:block;
+    font-size:1.9cqh;
+    font-weight:bold;
+    color:var(--teal);
+  }
+  .stat .cap{
+    font-size:1.3cqh;
+    letter-spacing:0.02em;
+    color:#30463f;
+    text-transform:uppercase;
+    line-height:1.25;
+    display:block;
+    margin-top:0.3cqh;
+  }
+
+  .para{
+    font-size:1.95cqh;
+    line-height:1.4;
+    margin:0;
+    color:#1c322c;
+  }
+
+  .footer{
+    text-align:center;
+    font-size:1.6cqh;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:#6a9a90;
+  }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="hero">
+      <img src="images/hero.jpg" alt="Mount Kailash reflected in the still turquoise waters of Lake Manasarovar at sunrise">
+      <div class="hero-caption">
+        <span class="kicker">Tibetan Buddhism · Sacred Waters</span>
+        <h1>Manasarovar — Lake of the Mind</h1>
+      </div>
+    </div>
+
+    <div class="badge">
+      <img src="images/secondary.jpg" alt="Dark, moody waters of Lake Rakshastal beneath a stormy sky near Mount Kailash">
+    </div>
+
+    <div class="content">
+      <p class="intro">
+        Beside Kailash lie two lakes — one of light, one of shadow —
+        mirroring the mountain's balance.
+      </p>
+
+      <div class="stat-row">
+        <div class="stat"><span class="num">4,590m</span><span class="cap">Elevation</span></div>
+        <div class="stat"><span class="num">Manasarovar</span><span class="cap">Lake of Light</span></div>
+        <div class="stat"><span class="num">Rakshastal</span><span class="cap">Lake of Shadow</span></div>
+      </div>
+
+      <p class="para">
+        Pilgrims bathe in Manasarovar's icy waters, believed to purify the
+        mind. Nearby Rakshastal, the "Lake of the Demon," stays dark,
+        salty, and largely unvisited.
+      </p>
+
+      <div class="footer">Om Mani Padme Hum</div>
+    </div>
+  </div>
+</body>
+</html>
