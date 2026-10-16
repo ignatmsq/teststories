@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Kailash in Myth — Axis of the World</title>
+<style>
+  :root{
+    --violet:#4a2060;
+    --gold:#d8b45c;
+    --red:#9c2b2b;
+    --cream:#f5eee0;
+    --ink:#241530;
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#0a0710;
+    font-family:'Georgia','Times New Roman',serif;
+  }
+  /* The story frame fills 100% of whatever host container/viewport it is
+     placed in — no fixed aspect ratio, no letterboxing. All content is
+     fitted/clipped inside — it never scrolls, regardless of the frame's
+     actual width:height ratio. */
+  .frame{
+    position:relative;
+    width:100%;
+    height:100%;
+    background:var(--cream);
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    container-type:size;
+  }
+
+  .hero{
+    flex:0 0 52%;
+    position:relative;
+    overflow:hidden;
+    background:#000;
+  }
+  .hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.1) 40%, rgba(10,7,16,0.92) 100%);
+  }
+  .hero-caption{
+    position:absolute;
+    bottom:3cqh;
+    left:0;
+    right:0;
+    text-align:center;
+    z-index:2;
+    padding:0 4cqw;
+  }
+  .hero-caption .kicker{
+    display:block;
+    font-size:1.5cqh;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:0.8cqh;
+  }
+  .hero-caption h1{
+    margin:0;
+    font-size:4cqh;
+    font-weight:700;
+    color:#fdf6e3;
+    text-shadow:0 2px 10px rgba(0,0,0,0.7);
+    line-height:1.15;
+  }
+
+  .badge{
+    position:absolute;
+    top:45.5cqh;
+    right:5cqw;
+    width:13.5cqh;
+    height:13.5cqh;
+    border-radius:50%;
+    overflow:hidden;
+    border:0.5cqh solid var(--gold);
+    box-shadow:0 0.6cqh 1.6cqh rgba(0,0,0,0.45);
+    z-index:5;
+  }
+  .badge img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+
+  .content{
+    flex:1;
+    min-height:0;
+    overflow:hidden;
+    padding:3cqh 5cqw 2.4cqh;
+    color:var(--ink);
+    background:
+      radial-gradient(circle at 90% 0%, rgba(74,32,96,0.12), transparent 45%),
+      var(--cream);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+
+  .intro{
+    font-size:2.1cqh;
+    line-height:1.4;
+    margin:0;
+    padding-right:14cqw;
+  }
+
+  .symbol-row{
+    display:flex;
+    justify-content:space-between;
+    gap:1.6cqw;
+  }
+  .symbol{
+    flex:1;
+    text-align:center;
+    background:#fff;
+    border-radius:0.8cqh;
+    padding:1.1cqh 0.4cqw;
+    box-shadow:0 0.2cqh 0.6cqh rgba(0,0,0,0.08);
+    border-top:0.35cqh solid var(--violet);
+  }
+  .symbol .glyph{
+    font-size:2.6cqh;
+    display:block;
+    margin-bottom:0.4cqh;
+    color:var(--red);
+  }
+  .symbol .cap{
+    font-size:1.3cqh;
+    letter-spacing:0.02em;
+    color:#463550;
+    text-transform:uppercase;
+    line-height:1.2;
+  }
+
+  .para{
+    font-size:1.95cqh;
+    line-height:1.4;
+    margin:0;
+    color:#352438;
+  }
+
+  .footer{
+    text-align:center;
+    font-size:1.6cqh;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--violet);
+  }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="hero">
+      <img src="images/hero.jpg" alt="Thangka-style painting of a deity with Mount Kailash rising behind in stylized clouds">
+      <div class="hero-caption">
+        <span class="kicker">Tibetan Buddhism · Sacred Mythology</span>
+        <h1>Axis of the World</h1>
+      </div>
+    </div>
+
+    <div class="badge">
+      <img src="images/secondary.jpg" alt="Detail of an ornate thangka painting of a meditating deity">
+    </div>
+
+    <div class="content">
+      <p class="intro">
+        Four faiths see Kailash as the center of the universe — each with
+        its own vision of the summit.
+      </p>
+
+      <div class="symbol-row">
+        <div class="symbol"><span class="glyph">☸</span><span class="cap">Demchok's Palace</span></div>
+        <div class="symbol"><span class="glyph">ॐ</span><span class="cap">Shiva's Abode</span></div>
+        <div class="symbol"><span class="glyph">✦</span><span class="cap">Ashtapada</span></div>
+        <div class="symbol"><span class="glyph">卍</span><span class="cap">Yungdrung Gutsek</span></div>
+      </div>
+
+      <p class="para">
+        Buddhists see the peak as Demchok's mandala palace; Hindus revere
+        it as Shiva's throne; Jains call it Ashtapada, site of liberation;
+        Bon names it the nine-story swastika mountain of eternity.
+      </p>
+
+      <div class="footer">Kang Tise</div>
+    </div>
+  </div>
+</body>
+</html>
